@@ -1,0 +1,226 @@
+/* =Typography
+-----------------------------------------------------------------------------*/
+html {
+  background: #ededed;
+}
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+h1,
+h2 {
+  color: #333;
+}
+h3,
+h4,
+h5,
+h6 {
+  color: #555;
+}
+a {
+  color: #3d8b37;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #3d8b37;
+}
+
+/* =Global
+-----------------------------------------------------------------------------*/
+#header-inner,
+#content-inner,
+#footer-inner,
+#showcase-inner,
+#nav-inner {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/* =Links
+-----------------------------------------------------------------------------*/
+
+/* =Layout
+-----------------------------------------------------------------------------*/
+#layout {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* =Header
+-----------------------------------------------------------------------------*/
+#header {
+  background: url('~assets/images/pattern.png');
+}
+#header-inner {
+  background: url('~assets/images/bg-logo.png') right center no-repeat;
+  overflow: hidden;
+  padding-top: 60px;
+}
+#logo {
+}
+#logoimg {
+}
+
+/* =Nav
+-----------------------------------------------------------------------------*/
+#nav {
+  border-bottom: 3px solid #3d8b37;
+  background: #fff;
+  -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+}
+#nav-inner {
+  padding: 5px;
+}
+.nav-g {
+  margin-bottom: 0;
+}
+.nav-g ul li {
+  width: 100%;
+  text-align: center;
+  padding: 5px 10px;
+  border-left: 1px solid #ededed;
+  margin: 0;
+}
+.nav-g ul .last {
+  border-right: 1px solid #ededed;
+}
+.nav-g ul li a {
+  color: #333;
+}
+.nav-g ul li a:hover {
+  text-decoration: none;
+  color: #3d8b37;
+}
+
+/* =Misc
+-----------------------------------------------------------------------------*/
+.l-sqr,
+.s-sqr {
+  height: auto;
+  border: 4px solid #ededed;
+}
+.s-sqr {
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+}
+textarea {
+  height: 200px;
+}
+.timeline {
+  height: 398px;
+}
+#caption {
+  color: #666;
+  padding: 20px;
+  border-left: 2px solid #5f980d;
+}
+.circular {
+  max-width: 150px;
+  max-height: 150px;
+  min-width: 150px;
+  min-height: 150px;
+  border-radius: 150px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  position: relative;
+  border: 5px solid #ededed;
+  z-index: 50;
+}
+.grnBdr {
+  border: 5px solid #3d8b37;
+  opacity: 0.5;
+}
+.main-quote {
+  background: #eee;
+}
+
+/* =Content
+-----------------------------------------------------------------------------*/
+#content {
+  padding: 30px;
+}
+#content-inner {
+}
+#email {
+  text-align: center;
+}
+#contact .message {
+  margin-bottom: 0;
+}
+.title {
+  border-bottom: 1px solid #ededed;
+  padding-top: 20px;
+}
+.job {
+  background: #ededed;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.cat-box {
+  background-color: white;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #c5c5c5;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.cat-box img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+.cat-box h3 {
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+}
+.cat-box ul {
+  list-style: none;
+  margin: 0;
+}
+.galleryItem {
+  text-align: center;
+}
+.galleryItem .text {
+  margin-top: -110px;
+  font-size: 18px;
+  color: #222;
+  position: relative;
+  z-index: 100;
+}
+.about ul {
+  list-style: none;
+}
+.section {
+  border-top: 1px solid #ededed;
+}
+.beforeafter {
+  border-bottom: 1px solid #ededed;
+  padding: 10px 0;
+}
+
+/* =Footer
+-----------------------------------------------------------------------------*/
+#footer {
+  background: #ededed;
+  border-top: 1px solid #ddd;
+}
+#footer-inner {
+}
+.social {
+  max-width: 50px;
+}
