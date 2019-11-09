@@ -6,7 +6,7 @@
     <div id="contact" class="units-row">
       <div class="unit-50">
         <h2>Form</h2>
-        <form>
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <p>
             <label for="name">Name</label>
             <br />

@@ -5,4 +5,4 @@ Allow: /about
 Allow: /contact
 Allow: /portfolio
 
-Sitemap: http://www.timothyhobbs.co.uk/sitemap.xml
+Sitemap: https://www.timothyhobbs.co.uk/sitemap.xml

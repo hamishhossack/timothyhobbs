@@ -1,5 +1,8 @@
 export default {
   mode: 'spa',
+  generate: {
+    fallback: true
+  },
   /*
    ** Headers of the page
    */
@@ -28,7 +31,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      { src: 'http://code.jquery.com/jquery-1.10.2.min.js' },
+      { src: 'https://code.jquery.com/jquery-1.10.2.min.js' },
       { src: '/kube.buttons.js', defer: true }
     ]
   },

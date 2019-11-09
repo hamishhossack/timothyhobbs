@@ -72,7 +72,7 @@
         <div class="units-row-end">
           <div class="unit-100">
             <address>
-              <div itemscope itemtype="http://schema.org/PostalAddress">
+              <div itemscope itemtype="https://schema.org/PostalAddress">
                 <span itemprop="streetAddress">63 Beales Road</span>,
                 <span itemprop="addressLocality">Bookham</span>,
                 <span itemprop="areaServed">Leatherhead</span>,

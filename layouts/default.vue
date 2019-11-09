@@ -47,7 +47,7 @@
             <p>
               Copyright &copy; Timothy Hobbs
               <br />Designed By
-              <a href="http://www.hamishhossack.co.uk">Hamish Hossack Design &amp; Media</a>. 2015
+              <a href="https://www.hamishhossack.co.uk">Hamish Hossack Design &amp; Media</a>. 2015
             </p>
           </div>
         </div>
