@@ -20,13 +20,13 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Garden Design &amp; Landscape Gardening in the Mole Valley district based near Leatherhead.'
+          'Garden Design &amp; Landscape Gardening by Timothy Hobbs in the Mole Valley district, Leatherhead.'
       },
       {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'Garden Design, Landscape Gardening, Mole Valley, Timoth Hobbs, Landscaping, Gardening, Surrey, Leatherhead, Mole Valley'
+          'Garden Design, Timothy Hobbs, Landscape Gardening, Mole Valley, Timoth Hobbs, Landscaping, Gardening, Surrey, Leatherhead, Mole Valley'
       },
       { hid: 'copyright', name: 'copyright', content: 'Timothy Hobbs Ltd' }
     ],
