@@ -1,6 +1,7 @@
 export default {
   mode: 'spa',
   generate: {
+    dir: 'public',
     fallback: true
   },
   /*
@@ -52,7 +53,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/recaptcha'],
   /*
    ** Nuxt.js dev-modules
    */

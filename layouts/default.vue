@@ -46,8 +46,9 @@
           <div class="unit-100">
             <p>
               Copyright &copy; Timothy Hobbs
-              <br />Designed By
-              <a href="https://www.hamishhossack.co.uk">Hamish Hossack Design &amp; Media</a>. 2015
+              <br />Built By
+              <a href="https://www.hamishhossack.co.uk">Hamish Hossack</a>
+              {{year}}
             </p>
           </div>
         </div>
@@ -55,6 +56,16 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      year: new Date().getFullYear()
+    }
+  }
+}
+</script>
 
 <style>
 html {

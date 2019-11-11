@@ -1,0 +1,6 @@
+{
+  "env": {
+    "MAILGUN_API_KEY": "@mailgun_api_key",
+    "MAILGUN_PUBLIC_KEY": "@mailgun_public_key"
+  }
+}

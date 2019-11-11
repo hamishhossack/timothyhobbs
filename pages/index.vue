@@ -73,10 +73,10 @@
           <div class="unit-100">
             <address>
               <div itemscope itemtype="https://schema.org/PostalAddress">
-                <span itemprop="streetAddress">63 Beales Road</span>,
-                <span itemprop="addressLocality">Bookham</span>,
+                <span itemprop="streetAddress">The Cottage</span>,
+                <span itemprop="addressLocality">Orestan Lane</span>,
                 <span itemprop="areaServed">Leatherhead</span>,
-                <span itemprop="postalCode">KT23 4NA</span>
+                <span itemprop="postalCode">KT24 5SN</span>
                 <span itemprop="addressCountry">United Kingdom</span>
               </div>
             </address>Tel: 01372 452197

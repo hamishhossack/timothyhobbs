@@ -55,6 +55,7 @@ a:hover {
 }
 #header-inner {
   background: url('~assets/images/bg-logo.png') right center no-repeat;
+  background-size: 20%;
   overflow: hidden;
   padding-top: 60px;
 }
@@ -142,15 +143,14 @@ textarea {
   background: #eee;
 }
 
+.grecaptcha-badge {
+  visibility: collapse !important;
+}
+
 /* =Content
 -----------------------------------------------------------------------------*/
 #content {
   padding: 30px;
-}
-#content-inner {
-}
-#email {
-  text-align: center;
 }
 #contact .message {
   margin-bottom: 0;
