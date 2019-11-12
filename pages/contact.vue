@@ -28,7 +28,8 @@
               <span class="required">*</span>
             </label>
             <br />
-            <textarea id="message" name="message" maxlength="250" v-model="message"></textarea>
+            <textarea id="message" name="message" maxlength="750" v-model="message"></textarea>
+            <span class="count">{{message.length}} / 750</span>
           </p>
 
           <div class="unit-25">
@@ -137,5 +138,11 @@ export default {
 }
 .success {
   color: green;
+}
+.count {
+  text-align: right;
+  width: 100%;
+  display: block;
+  font-size: 0.9rem;
 }
 </style>

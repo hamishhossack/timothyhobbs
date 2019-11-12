@@ -11,7 +11,7 @@ export default (req, res) => {
   mailgun
     .messages()
     .send({
-      from: 'Website Contact <web@timothyhobbs.co.uk>',
+      from: 'Website Contact <web@mg.timothyhobbs.co.uk>',
       to: ['tim@timothyhobbs.co.uk'],
       subject: `Website contact from ${name}`,
       html: `
