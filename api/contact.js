@@ -1,7 +1,7 @@
 const mailgun = require('mailgun-js')({
   apiKey: process.env.MAILGUN_API_KEY,
   domain: 'mg.timothyhobbs.co.uk',
-  host: 'https://api.eu.mailgun.net/v3'
+  host: 'api.eu.mailgun.net'
 })
 
 export default (req, res) => {
