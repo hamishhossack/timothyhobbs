@@ -29,7 +29,7 @@
             </label>
             <br />
             <textarea id="message" name="message" maxlength="750" v-model="message"></textarea>
-            <span class="count">{{message.length}} / 750</span>
+            <span class="count">{{750 - message.length}} characters left</span>
           </p>
 
           <div class="unit-25">
