@@ -119,6 +119,8 @@ export default {
           })
         })
 
+        await response.json()
+
         if (response.status === 200) {
           this.success = true
         } else {

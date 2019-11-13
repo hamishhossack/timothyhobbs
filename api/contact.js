@@ -13,7 +13,7 @@ export default (req, res) => {
     .messages()
     .send({
       from: 'Website Contact <web@mg.timothyhobbs.co.uk>',
-      to: ['tim@timothyhobbs.co.uk'],
+      to: ['tim-hobbs@hotmail.com'],
       subject: `Website contact from ${name}`,
       html: `
         <h1>Website contact from <strong>${name}</strong></h1>
