@@ -10,7 +10,13 @@
           <p>
             <label for="name">Name</label>
             <br />
-            <input id="name" type="text" name="name" maxlength="64" v-model="name" />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              maxlength="64"
+              v-model="name"
+            />
           </p>
 
           <p>
@@ -19,7 +25,13 @@
               <span class="required">*</span>
             </label>
             <br />
-            <input id="email" type="text" name="email" maxlength="64" v-model="email" />
+            <input
+              id="email"
+              type="text"
+              name="email"
+              maxlength="64"
+              v-model="email"
+            />
           </p>
 
           <p>
@@ -28,17 +40,30 @@
               <span class="required">*</span>
             </label>
             <br />
-            <textarea id="message" name="message" maxlength="750" v-model="message"></textarea>
-            <span class="count">{{750 - message.length}} characters left</span>
+            <textarea
+              id="message"
+              name="message"
+              maxlength="750"
+              v-model="message"
+            ></textarea>
+            <span class="count"
+              >{{ 750 - message.length }} characters left</span
+            >
           </p>
 
           <div class="unit-25">
-            <button type="submit" :disabled="!isValidForm" class="btn">Submit</button>
+            <button type="submit" :disabled="!isValidForm" class="btn">
+              Submit
+            </button>
           </div>
           <div class="unit 75">
             <p v-if="sent">
-              <span v-if="success" class="success">You message was sent successfully</span>
-              <span v-if="!success" class="error">You message was not sent, please try again!</span>
+              <span v-if="success" class="success"
+                >Your message was sent successfully</span
+              >
+              <span v-if="!success" class="error"
+                >Your message was not sent, please try again!</span
+              >
             </p>
           </div>
         </form>
@@ -99,10 +124,9 @@ export default {
       })
     },
     async sendEmail() {
-      this.sent = true
-
       try {
-        const response = await fetch(`${window.location.origin}/api/contact`, {
+        this.sent = true
+        await fetch(`${window.location.origin}/api/contact`, {
           method: 'POST',
           mode: 'cors',
           cache: 'no-cache',
@@ -110,7 +134,6 @@ export default {
           headers: {
             'Content-Type': 'application/json'
           },
-          redirect: 'follow',
           referrer: 'no-referrer',
           body: JSON.stringify({
             name: this.name,
@@ -119,14 +142,9 @@ export default {
           })
         })
 
-        await response.json()
-
-        if (response.status === 200) {
-          this.success = true
-        } else {
-          this.success = false
-        }
+        this.success = true
       } catch (error) {
+        console.log('error', error)
         this.success = false
       }
     }
