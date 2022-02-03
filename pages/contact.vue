@@ -52,8 +52,12 @@
           </p>
 
           <div class="unit-25">
-            <button type="submit" :disabled="!isValidForm" class="btn">
-              Submit
+            <button
+              type="submit"
+              :disabled="!isValidForm || sending"
+              class="btn"
+            >
+              <spinner v-if="sending" /><span v-else>Submit</span>
             </button>
           </div>
           <div class="unit 75">
@@ -100,9 +104,16 @@
 </template>
 
 <script>
+import Spinner from '~/components/Spinner.vue'
+
 export default {
+  components: {
+    Spinner
+  },
+
   data() {
     return {
+      sending: false,
       sent: false,
       success: false,
       name: '',
@@ -125,7 +136,7 @@ export default {
     },
     async sendEmail() {
       try {
-        this.sent = true
+        this.sending = true
         await fetch(`${window.location.origin}/api/contact`, {
           method: 'POST',
           mode: 'cors',
@@ -146,6 +157,9 @@ export default {
       } catch (error) {
         console.log('error', error)
         this.success = false
+      } finally {
+        this.sending = false
+        this.sent = true
       }
     }
   }
